@@ -1,0 +1,2300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first-nav{
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #0067ED;
+    
+}
+
+.first-nav .for-address{
+    width: 25%;
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 100px;
+    
+}
+.first-nav .for-address h3{
+    padding-left: 10px;
+}
+
+.first-nav .for-address h3,i{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first-nav .for-email{
+    width: 20%;
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+.first-nav .for-email p{
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.first-nav .for-icon{
+    width: 30%;
+    margin-left: 500px;
+    margin-right: 50px;
+}
+
+.first-nav .for-icon i{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.first-nav .for-icon i:hover{
+    color: black;
+    cursor: pointer;
+    
+}
+
+
+.second-nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+    background-color: white;
+}
+
+.second-nav .logo{
+    width: 30%;
+    height: 100%;
+}
+
+.second-nav .navbar{
+    width: 43%;
+    height: 100%;
+}
+
+.second-nav .button{
+    width: 25%;
+    height: 100%;
+}
+
+.logo img{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+
+.second-nav .navbar .main-ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    list-style-type: none;
+}
+
+.second-nav .navbar .main-ul .home-dropdown{
+    position: absolute;
+    top: 100px;
+    left: 480px;
+    list-style-type: none;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    opacity: 0;
+}
+
+.second-nav .navbar .main-ul li:hover .home-dropdown{
+    opacity: 1;
+    transform: translateY(-7px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .home-dropdown li:hover{
+    transform: translateX(10px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .service-dropdown{
+    position: absolute;
+    top: 100px;
+    left: 650px;
+    list-style-type: none;
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    opacity: 0;
+}
+
+.second-nav .navbar .main-ul li:hover .service-dropdown{
+    opacity: 1;
+    transform: translateY(-7px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .service-dropdown li:hover{
+    transform: translateX(10px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .page-dropdown{
+    position: absolute;
+    top: 100px;
+    left: 730px;
+    list-style-type: none;
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    opacity: 0;
+}
+
+.second-nav .navbar .main-ul li:hover .page-dropdown{
+    opacity: 1;
+    transform: translateY(-7px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .page-dropdown li:hover{
+    transform: translateX(10px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .blog-dropdown{
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    list-style-type: none;
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    opacity: 0;
+}
+
+.second-nav .navbar .main-ul li:hover .blog-dropdown{
+    opacity: 1;
+    transform: translateY(-7px);
+    transition: 1s ease;
+}
+
+.second-nav .navbar .main-ul .blog-dropdown li:hover{
+    transform: translateX(10px);
+    transition: 1s ease;
+}
+
+
+.second-nav .navbar .main-ul li{
+    padding: 10px 15px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.second-nav .navbar .main-ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.second-nav .navbar .main-ul li a:hover{
+    color: #0067ED;
+    transition: 0.4s ease;
+}
+
+.button button{
+    padding: 15px 30px 15px 30px;
+    margin-top: 35px;
+    cursor: pointer;
+    background-color: #0067ED;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button button:hover{
+    background-color: black;
+    transition: 0.6s;
+}
+
+
+.first-img{
+    width: 100%;
+    height: 800px;
+    background-image: url('slider-01-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-img .top-button{
+    margin: 150px 0 0 110px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0067ED;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.first-img .shocking-h1{
+    font-family: "Montserrat", serif;
+    font-weight: 350;
+    padding: 30px 0 0 110px;
+    font-size: 45px;
+}
+
+.first-img .visa-h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px 0 0 110px;
+    font-size: 50px;
+    color: #0067ED;
+}
+
+.first-img p{
+    font-family: "railway",sans-serif;
+    padding: 20px 0 0 110px;
+    word-spacing: 1px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.first-img .solution-button{
+    margin: 40px 0 0 110px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0067ED;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.first-img .solution-button:hover{
+    background-color: black;
+    transition: 1s ease;
+}
+
+.first-img .read-more-button{
+    margin-left: 20px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: #0067ED;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.first-img .read-more-button:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 1s ease;
+}
+
+.flags{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 70px;
+}
+
+.flags .flag1,.flag2,.flag3,.flag4{
+    width: 20%;
+    height: 300px;
+    border-top: 3px solid #0067ED;
+    background-color: white;
+    -webkit-box-shadow: 2px 6px 23px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 23px -10px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 23px -10px rgba(0,0,0,0.75);
+}
+
+.flags .flag1 .for-flag1-gif{
+    width: 35%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 60%;
+    background-image: url('gif-thumb-01.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.flags .flag1 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.flags .flag1 a{
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 95px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #0067ED;
+}
+
+.flags .flag1 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 33px;
+    left: 100px;
+}
+
+.flags .flag2 .for-flag1-gif{
+    width: 35%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 60%;
+    background-image: url('gif-thumb-02.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.flags .flag2 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.flags .flag2 a{
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 95px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #0067ED;
+}
+
+.flags .flag2 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 33px;
+    left: 100px;
+}
+
+.flags .flag3 .for-flag1-gif{
+    width: 35%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 60%;
+    background-image: url('gif-thumb-03.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.flags .flag3 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.flags .flag3 a{
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 95px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #0067ED;
+}
+
+.flags .flag3 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 33px;
+    left: 100px;
+}
+
+.flags .flag4 .for-flag1-gif{
+    width: 35%;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 60%;
+    background-image: url('gif-thumb-04.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.flags .flag4 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+.flags .flag4 a{
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 95px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #0067ED;
+}
+
+.flags .flag4 img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 33px;
+    left: 100px;
+}
+
+.text-image-1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-image-1 .image-div{
+    width: 40%;
+    height: 600px;
+    background-image: url('about-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-image-1 .text-div{
+    width: 50%;
+    height: 600px;
+}
+
+
+.text-div .welcome-para{
+    padding:15px 0 0 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0067ED;
+}
+.text-div h1{
+    padding: 10px 0 0 50px;
+    font-family: "Montserrat", serif;
+    line-height: 55px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+span{
+    font-weight: 700;
+    color: black;
+}
+
+.text-div .big-para{
+    padding: 50px 0 0 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #868686;
+    font-size: 17px;
+}
+
+.text-div .icons-heading-para{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.text-div .icons-heading-para .pen-heading-para,.cart-heading-para{
+    width: 50%;
+    height: 100%;
+}
+
+.text-div .icons-heading-para .pen-heading-para img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 55px;
+    left: 40px;
+}
+
+.text-div .icons-heading-para .pen-heading-para h3{
+    padding: 60px 0 0 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.text-div .icons-heading-para .pen-heading-para p{
+    padding: 5px 0 0 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.text-div .icons-heading-para .cart-heading-para img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 55px;
+    left: 0px;
+}
+
+.text-div .icons-heading-para .cart-heading-para h3{
+    padding: 60px 0 0 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.text-div .icons-heading-para .cart-heading-para p{
+    padding: 5px 0 0 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.text-div button{
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0067ED;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.text-div button:hover{
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+.big-container-of-8-divs{
+    width: 100%;
+    height: 1200px;
+    margin-top: 80px;
+    background-image: url('service-bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-container-of-8-divs .for-text{
+    width: 100%;
+    height: 300px;
+}
+
+.big-container-of-8-divs .for-first-4-divs,.for-second-4-divs{
+    width: 100%;
+    height: 340px;
+}
+
+.big-container-of-8-divs .for-text p {
+    text-align: center;
+    padding-top: 100px;
+    color: #0067ED;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.big-container-of-8-divs .for-text h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    color: white;
+    line-height: 50px;
+}
+
+.big-container-of-8-divs .for-text h1 span{
+    color: white;
+}
+
+.big-container-of-8-divs .for-first-4-divs{
+    display: flex;
+    justify-content: center;
+}
+
+.big-container-of-8-divs .for-first-4-divs div{
+    width: 20%;
+    height: 100%;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #414655;
+}
+
+
+.for-first-4-divs .div-1 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-first-4-divs .div-1 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 34px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-first-4-divs .div-1 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-first-4-divs .div-1 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-first-4-divs .div-2 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-first-4-divs .div-2 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 34px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-first-4-divs .div-2 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-first-4-divs .div-2 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-first-4-divs .div-3 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-first-4-divs .div-3 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 25px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-first-4-divs .div-3 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-first-4-divs .div-3 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-first-4-divs .div-4 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-first-4-divs .div-4 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 25px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-first-4-divs .div-4 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-first-4-divs .div-4 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-first-4-divs .div-1:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-first-4-divs .div-1:hover i{
+    color: white;
+}
+
+.for-first-4-divs .div-2:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-first-4-divs .div-2:hover i{
+    color: white;
+}
+
+.for-first-4-divs .div-3:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-first-4-divs .div-3:hover i{
+    color: white;
+}
+
+.for-first-4-divs .div-4:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-first-4-divs .div-4:hover i{
+    color: white;
+}
+
+
+
+.big-container-of-8-divs .for-second-4-divs{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.big-container-of-8-divs .for-second-4-divs div{
+    width: 20%;
+    height: 100%;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #414655;
+}
+
+
+.for-second-4-divs .div-1 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-second-4-divs .div-1 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 25px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-second-4-divs .div-1 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-second-4-divs .div-1 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-second-4-divs .div-2 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-second-4-divs .div-2 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 30px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-second-4-divs .div-2 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-second-4-divs .div-2 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-second-4-divs .div-3 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-second-4-divs .div-3 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 30px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-second-4-divs .div-3 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-second-4-divs .div-3 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-second-4-divs .div-4 .div-1-icon{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.20);
+    
+}
+
+.for-second-4-divs .div-4 .div-1-icon i{
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 30px;
+    opacity: 1;
+    color: #0067ED;
+    border: none;
+}
+
+.for-second-4-divs .div-4 h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 25px;
+    color: white;
+}
+
+.for-second-4-divs .div-4 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8490A1;
+    padding-top: 25px;
+}
+
+.for-second-4-divs .div-1:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-second-4-divs .div-1:hover i{
+    color: white;
+}
+
+.for-second-4-divs .div-2:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-second-4-divs .div-2:hover i{
+    color: white;
+}
+
+.for-second-4-divs .div-3:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-second-4-divs .div-3:hover i{
+    color: white;
+}
+
+.for-second-4-divs .div-4:hover .div-1-icon{
+    background-color: #0067ED;
+    transition: 0.6s ease;
+}
+
+.for-second-4-divs .div-4:hover i{
+    color: white;
+}
+
+.application-div{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    bottom: 60px;
+    background-color: white;
+    -webkit-box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+}
+
+.application-div .for-icon{
+    width: 10%;
+    height: 100px;
+    margin-top: 40px;
+    border-radius: 50px;
+    margin-left: 20px;
+    background-color: #CFE2FC;
+}
+
+.application-div .for-text{
+    width: 70%;
+    height: 100%;
+}
+
+.application-div .for-button{
+    width: 25%;
+    height: 100%;
+}
+
+.application-div .for-icon i{
+    color: #0067ED;
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+
+.application-div .for-text h2{
+    padding: 50px 0 0 20px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.application-div .for-text h2:hover{
+    color: #0067ED;
+    transition: 0.3s ease;
+}
+
+.application-div .for-text h2 span{
+    color: #0067ED;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.application-div .for-text p{
+    padding: 10px 0 0 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: #757575;
+}
+
+.application-div .for-button button{
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    background-color: #0067ED;
+    color: white;
+    font-weight: 800;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.application-div .for-button button:hover{
+    background-color: black;
+    transition: 0.5s ease;
+}
+
+.our-member-div{
+    width: 100%;
+    height: 200px;
+}
+
+.our-member-div p{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 17.5px;
+    color: #0067ED;
+}
+
+.our-member-div h1{
+    text-align: center;
+    font-family: "Montserrat",serif;
+    padding-top: 25px;
+    font-weight: 300;
+}
+
+.images-3-div{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.images-3-div .img1,.img2,.img3{
+    width: 25%;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.images-3-div .img1{
+    background-image: url('team-01-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.images-3-div .img2{
+    background-image: url('team-02-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.images-3-div .img3{
+    background-image: url('team-01-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.images-3-div .img1 .img1-icons{
+    width: 10%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+    margin: 0px 20px 0px 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.images-3-div .img1:hover .img1-icons{
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.7s ease;
+}
+
+.images-3-div .img1 .img1-icons i{
+    color: #0067ED;
+    cursor: pointer;
+
+}
+
+.images-3-div .img1 .img1-icons i:hover{
+    color: orangered;
+}
+
+.images-3-div .img2 .img1-icons{
+    width: 10%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+    margin: 0px 20px 0px 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.images-3-div .img2:hover .img1-icons{
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+
+.images-3-div .img2 .img1-icons i{
+    color: #0067ED;
+    cursor: pointer;
+
+}
+
+.images-3-div .img2 .img1-icons i:hover{
+    color: orangered;
+}
+
+.images-3-div .img3 .img1-icons{
+    width: 10%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+    margin: 0px 20px 0px 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.images-3-div .img3:hover .img1-icons{
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.7s ease;
+}
+
+.images-3-div .img3 .img1-icons i{
+    color: #0067ED;
+    cursor: pointer;
+
+}
+
+.images-3-div .img3 .img1-icons i:hover{
+    color: orangered;
+}
+
+.image-desc{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.image-desc .img1-desc,.img2-desc,.img3-desc{
+    width: 20%;
+    height: 120px;
+    /* margin-left: 85px; */
+    border-bottom: 3px solid #0067ED;
+    -webkit-box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 15px -6px rgba(0,0,0,0.75);
+
+}
+
+.image-desc .img1-desc{
+    position: relative;
+    right: 80px;
+    border-radius: 5px;
+    background-color: white;
+}
+.image-desc .img2-desc{
+    position: relative;
+    left: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+.image-desc .img3-desc{
+   position: relative;
+   left: 90px;
+   border-radius: 5px;
+   background-color: white;
+}
+
+.image-desc .img1-desc h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat",serif;
+}
+
+.image-desc .img1-desc p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+    font-weight: 800;
+}
+
+.image-desc .img2-desc h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat",serif;
+}
+
+.image-desc .img2-desc p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+    font-weight: 800;
+}
+
+.image-desc .img3-desc h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat",serif;
+}
+
+.image-desc .img3-desc p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+    font-weight: 800;
+}
+
+.big-div-for-percentage{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.big-div-for-percentage .text-percentage{
+    width: 60%;
+    height: 100%;
+}
+
+.big-div-for-percentage .for-image{
+    width: 50%;
+    height: 100%;
+    background-image: url('skill-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-div-for-percentage .text-percentage .agency{
+    padding-left: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #0067ED;
+}
+
+.big-div-for-percentage .text-percentage h1{
+    padding-left: 80px;
+    padding-top: 10px;
+    font-family: "Montserrat",serif;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.big-div-for-percentage .text-percentage .big-para-p{
+    padding-left: 80px;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #868686;
+}
+
+.big-div-for-percentage .text-percentage .for-90{
+    width: 70%;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-div-for-percentage .text-percentage .for-90 .business,.para-90{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+    display: inline-block;
+}
+
+.big-div-for-percentage .text-percentage .business-line{
+    background-color: #E9ECEF;
+    width: 75%;
+    height: 8px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.big-div-for-percentage .text-percentage .business-line .upper-business-line{
+    width: 90%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #0067ED;
+}
+
+.big-div-for-percentage .text-percentage .for-95{
+    width: 72%;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-div-for-percentage .text-percentage .for-95 .financial,.para-95{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.big-div-for-percentage .text-percentage .financial-line{
+    background-color: #E9ECEF;
+    width: 75%;
+    height: 8px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.big-div-for-percentage .text-percentage .financial-line .upper-financial-line{
+    width: 95%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #0067ED;
+}
+
+.big-div-for-percentage .text-percentage .for-80{
+    width: 62%;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-div-for-percentage .text-percentage .for-80 .experience,.para-80{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.big-div-for-percentage .text-percentage .experience-line{
+    background-color: #E9ECEF;
+    width: 75%;
+    height: 8px;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.big-div-for-percentage .text-percentage .experience-line .upper-experience-line{
+    width: 80%;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #0067ED;
+}
+
+.gallery-div{
+    width: 100%;
+    height: 300px;
+    background-image: url('gallery-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.gallery-div .gallery-para{
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}
+
+.gallery-div h1{
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Montserrat",serif;
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+}
+
+.gallery-div h1 span{
+    color: white;
+}
+
+.three-square-images{
+    width: 100%;
+    height: 320px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.three-square-images .square-one,.square-two,.square-three{
+    width: 320px;
+    height: 320px;
+    margin-left: 40px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 3px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 10px -4px rgba(0,0,0,0.75);
+}
+
+.three-square-images .square-one{
+    background-image: url('p2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.three-square-images .square-one:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.three-square-images .square-one:hover .square-one-details,.black-trans{
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: 1s ease;
+}
+
+.three-square-images .square-one .square-one-details{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: white;
+    z-index: 99;
+    opacity: 0;
+}
+
+.three-square-images .square-one .square-one-details h3{
+    padding: 20px 0 0 20px;
+    font-size: 18px;
+    font-family: "Montserrat",serif;
+}
+
+.three-square-images .square-one .square-one-details p{
+    padding: 5px 0 0 20px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.three-square-images .square-two{
+    background-image: url('p1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.three-square-images .square-two:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.three-square-images .square-two:hover .square-one-details{
+    opacity: 1;
+    transform: translateY(-40px);
+    transition: 1s ease;
+}
+
+.three-square-images .square-two .square-one-details{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: white;
+    z-index: 99;
+    opacity: 0;
+}
+
+.three-square-images .square-two .square-one-details h3{
+    padding: 20px 0 0 20px;
+    font-size: 18px;
+    font-family: "Montserrat",serif;
+}
+
+.three-square-images .square-two .square-one-details p{
+    padding: 5px 0 0 20px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.three-square-images .square-three{
+    background-image: url('p2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.three-square-images .square-three:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.three-square-images .square-three:hover .square-one-details{
+    opacity: 1;
+    transform: translateY(-40px);
+    transition: 1s ease;
+}
+
+.three-square-images .square-three .square-one-details{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: white;
+    z-index: 99;
+    opacity: 0;
+}
+
+.three-square-images .square-three .square-one-details h3{
+    padding: 20px 0 0 20px;
+    font-size: 18px;
+    font-family: "Montserrat",serif;
+}
+
+.three-square-images .square-three .square-one-details p{
+    padding: 5px 0 0 20px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.agents-divs{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.agents-divs .for-agent-img{
+    width: 45%;
+    height: 100%;
+}
+
+.agents-divs .for-agent-img img{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.agents-divs .for-agent-text{
+    width: 55%;
+    height: 100%;
+}
+
+.agents-divs .for-agent-text .heading-para{
+    width: 100%;
+    height: 30%;
+}
+
+.agents-divs .for-agent-text .heading-para p{
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #0067ED;
+}
+
+.agents-divs .for-agent-text .heading-para h1{
+    padding-top: 20px;
+    font-family: "Montserrat",serif;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.agents-divs .for-agent-text .four-long-boxes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.agents-divs .for-agent-text .four-long-boxes .long-box1{
+    width: 80%;
+    height: 150px;
+    border: 0.5px solid #F1F1F1;
+    cursor: pointer;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box1:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box2,.long-box3,.long-box4{
+    width: 80%;
+    height: 80px;
+    border: 0.5px solid #F1F1F1;
+    cursor: pointer;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box2:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box3:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box4:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box1 i{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 40px;
+    left: 550px;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box1 h3{
+    margin: 20px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box1 p{
+    padding-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box2 h3{
+    padding: 25px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+
+.agents-divs .for-agent-text .four-long-boxes .long-box2 i{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 20px;
+    left: 550px;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box3 h3{
+    padding: 25px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+
+.agents-divs .for-agent-text .four-long-boxes .long-box3 i{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 20px;
+    left: 550px;
+}
+
+.agents-divs .for-agent-text .four-long-boxes .long-box4 h3{
+    padding: 25px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+
+.agents-divs .for-agent-text .four-long-boxes .long-box4 i{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 20px;
+    left: 550px;
+}
+
+.customers-cards{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    background-color: #F5F8FB;
+}
+
+.customers-cards .card-heading-para{
+    width: 100%;
+    height: 180px;
+}
+
+.customers-cards .card-heading-para p{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #0067ED;
+}
+
+.customers-cards .card-heading-para h1{
+    text-align: center;
+    font-family: "Montserrat",serif;
+    padding-top: 30px;
+    font-weight: 300;
+}
+
+.customers-cards .three-cards{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.customers-cards .three-cards .card-1,.card-2,.card-3{
+    width: 25%;
+    height: 320px;
+    margin-left: 20px;
+    box-shadow: 2px 3px 13px -6px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 2px 3px 13px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: 2px 3px 13px -6px rgba(0,0,0,0.46);
+}
+
+.customers-cards .three-cards .card-1 img{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.customers-cards .three-cards .card-1 h2{
+    padding-left: 120px ;
+    font-family: "Montserrat",serif;
+    color: #2F343A;
+}
+
+.customers-cards .three-cards .card-1 .card-1-short-para{
+    padding-left: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+}
+
+.customers-cards .three-cards .card-1 .card-1-big-para{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+}
+
+.customers-cards .three-cards .card-1 i{
+    color: #0067ED;
+    padding-top: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.customers-cards .three-cards .card-2 img{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.customers-cards .three-cards .card-2 h2{
+    padding-left: 120px ;
+    font-family: "Montserrat",serif;
+    color: #2F343A;
+}
+
+.customers-cards .three-cards .card-2 .card-1-short-para{
+    padding-left: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+}
+
+.customers-cards .three-cards .card-2 .card-1-big-para{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+}
+
+.customers-cards .three-cards .card-2 i{
+    color: #0067ED;
+    padding-top: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.customers-cards .three-cards .card-3 img{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.customers-cards .three-cards .card-3 h2{
+    padding-left: 120px ;
+    font-family: "Montserrat",serif;
+    color: #2F343A;
+}
+
+.customers-cards .three-cards .card-3 .card-1-short-para{
+    padding-left: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0067ED;
+}
+
+.customers-cards .three-cards .card-3 .card-1-big-para{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+}
+
+.customers-cards .three-cards .card-3 i{
+    color: #0067ED;
+    padding-top: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.logos{
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+    background-color: #0067ED;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logos img{
+    cursor: pointer;
+}
+
+.last-heading-para{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.last-heading-para .text{
+    width: 60%;
+    height: 100%;
+}
+
+.last-heading-para .btn{
+    width: 40%;
+    height: 100%;
+}
+
+.last-heading-para .text p{
+    padding: 35px 0 0 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    color: #0067ED;
+    font-size: 18px;
+}
+
+.last-heading-para .text h1{
+    font-family: "Montserrat",serif;
+    padding: 20px 0 0 100px;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+.last-heading-para .btn button{
+    float: right;
+    margin-top: 70px;
+    margin-right: 100px;
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    border-radius: 40px;
+    border: 3px solid #0067ED;
+    font-weight: 900;
+    font-family: "Montserrat",serif;
+    cursor: pointer;
+}
+
+.last-heading-para .btn button:hover{
+    background-color: #0067ED;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.last-three-images{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.last-three-images .last-image-1,.last-image-2,.last-image-3{
+    width: 25%;
+    height: 350px;
+    margin-left: 25px;
+}
+
+.last-three-images .last-image-1{
+    background-image: url('blog-1-370x370.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.last-three-images .last-image-2{
+    background-image: url('blog-2-370x370.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.last-three-images .last-image-3{
+    background-image: url('blog-3-370x370.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.last-three-images .last-image-1 .last-img1-detail{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+}
+
+.last-three-images .last-image-1 .last-img1-detail h3{
+    padding: 40px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+.last-three-images .last-image-1 .last-img1-detail i{
+    color: #0067ED;
+    font-size: 13px;
+    position: relative;
+    top: 28px;
+    left: 25px;
+}
+
+.last-three-images .last-image-1 .last-img1-detail .poket{
+    padding: 10px 0 0 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: #585858;
+}
+
+
+.last-three-images .last-image-1 .last-img1-detail .lorem{
+    padding: 10px 0 0 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+    
+}
+
+
+.last-three-images .last-image-2 .last-img1-detail{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+}
+
+.last-three-images .last-image-2 .last-img1-detail h3{
+    padding: 40px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+.last-three-images .last-image-2 .last-img1-detail i{
+    color: #0067ED;
+    font-size: 13px;
+    position: relative;
+    top: 28px;
+    left: 25px;
+}
+
+.last-three-images .last-image-2 .last-img1-detail .poket{
+    padding: 10px 0 0 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: #585858;
+}
+
+
+.last-three-images .last-image-2 .last-img1-detail .lorem{
+    padding: 10px 0 0 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+    
+}
+
+.last-three-images .last-image-3 .last-img1-detail{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -webkit-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: -2px 6px 13px -6px rgba(0,0,0,0.46);
+}
+
+.last-three-images .last-image-3 .last-img1-detail h3{
+    padding: 40px 0 0 30px;
+    font-family: "Montserrat",serif;
+}
+
+.last-three-images .last-image-3 .last-img1-detail i{
+    color: #0067ED;
+    font-size: 13px;
+    position: relative;
+    top: 28px;
+    left: 25px;
+}
+
+.last-three-images .last-image-3 .last-img1-detail .poket{
+    padding: 10px 0 0 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: #585858;
+}
+
+
+.last-three-images .last-image-3 .last-img1-detail .lorem{
+    padding: 10px 0 0 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #585858;
+    
+}
+
+.footer{
+    width: 1005;
+    height: 400px;
+    margin-top: 200px;
+    background-color: #0067ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .for-logo,.useful-links,.address,.navigation{
+    width: 22%;
+    height: 350px;
+}
+
+.footer .for-logo img{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.footer .for-logo p{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.footer .for-logo i{
+    margin-left: 20px;
+    margin-top: 25px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.footer .for-logo i:hover{
+    background-color: #0067ED;
+    transition: 0.4s ease;
+}
+
+.footer .useful-links h2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Montserrat",serif;
+    color: white;
+}
+
+.footer .useful-links ul{
+    list-style-type: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.footer .useful-links ul li{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer .useful-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .useful-links ul li a:hover{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.footer .address h2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Montserrat",serif;
+    color: white;
+}
+
+.footer .address ul{
+    list-style-type: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.footer .address ul li{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer .address ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .navigation h2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Montserrat",serif;
+    color: white;
+}
+
+.footer .navigation ul{
+    list-style-type: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.footer .navigation ul li{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer .navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .navigation ul li a:hover{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.last-footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-footer h3{
+    color: white;
+    padding-left: 80px;
+    font-family: "Montserrat",serif;
+}
+
+.last-footer ul{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20px;
+    list-style-type: none;
+    
+}
+
+.last-footer ul li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.last-footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.last-footer ul li a:hover{
+    color: #0067ED;
+    transition: 0.3s ease;
+}
