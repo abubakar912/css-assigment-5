@@ -103,7 +103,7 @@
     list-style-type: none;
 }
 
-.second-nav .navbar .main-ul .home-dropdown{
+/* .second-nav .navbar .main-ul .home-dropdown{
     position: absolute;
     top: 100px;
     left: 480px;
@@ -114,7 +114,7 @@
     opacity: 0;
 }
 
-.second-nav .navbar .main-ul li:hover .home-dropdown{
+.second-nav .navbar .main-ul .home:hover .home-dropdown{
     opacity: 1;
     transform: translateY(-7px);
     transition: 1s ease;
@@ -189,7 +189,7 @@
 .second-nav .navbar .main-ul .blog-dropdown li:hover{
     transform: translateX(10px);
     transition: 1s ease;
-}
+} */
 
 
 .second-nav .navbar .main-ul li{
